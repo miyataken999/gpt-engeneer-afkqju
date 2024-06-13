@@ -1,0 +1,15 @@
+@startuml
+class Diamond {
+  - id: int
+  - carat: float
+  - cut: string
+  - color: string
+  - clarity: string
+}
+
+class DiamondCalculationSystem {
+  - calculate(): float
+}
+
+Diamond -> DiamondCalculationSystem: uses
+@enduml
